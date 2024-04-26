@@ -29,6 +29,6 @@ pythonCopy codecaptions = predict_step(['sample2.jpg'])
 print(captions)
 This will output the generated captions for the given image(s).
 
-## **Example**
+
 The provided code includes an example usage:
 pythonCopy codepredict_step(['sample2.jpg'])
