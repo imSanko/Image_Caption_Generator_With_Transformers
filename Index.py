@@ -1,4 +1,4 @@
-mport streamlit as st
+import streamlit as st
 from transformers import VisionEncoderDecoderModel, ViTFeatureExtractor, AutoTokenizer
 import torch
 from PIL import Image
