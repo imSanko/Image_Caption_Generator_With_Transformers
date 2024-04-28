@@ -26,17 +26,19 @@ Fixes #1. There is a bug in the code that doesn't handle the edge case when the 
 * Fix a bug or typo in an existing algorithm?
 
 ### Checklist:
+ADD [x] = For Availing the point.
+Blank [] = For Unselecting.
 
-* This pull request is all my own work -- I have not used AI TOOL's, hence it'll be CLOSED.
-* I know that pull requests will not be merged if they fail the automated tests.
-* This PR only changes one file. To ease review, please open separate PRs for separate algorithms.
-* All filenames are in all lowercase characters with no spaces or dashes.
-* All function parameters and return values are annotated with Python type hints in .py file
-* If this pull request resolves one or more open issues then the description above includes the issue number(s) with a closing keyword: "Fixes #ISSUE-NUMBER".
-* I have read CONTRIBUTING.md.
-* All functions and variable names follow Python naming conventions.
-* All new algorithms include at least one URL that points to Wikipedia or another similar explanation.
-* Documentation change?
+* [] This pull request is all my own work -- I have not used AI TOOL's, hence it'll be CLOSED.
+* [] I know that pull requests will not be merged if they fail the automated tests.
+* [] This PR only changes one file. To ease review, please open separate PRs for separate algorithms.
+* [] All filenames are in all lowercase characters with no spaces or dashes.
+* [] All function parameters and return values are annotated with Python type hints in .py file
+* [] If this pull request resolves one or more open issues then the description above includes the issue number(s) with a closing keyword: "Fixes #ISSUE-NUMBER".
+* [] I have read CONTRIBUTING.md.
+* [] All functions and variable names follow Python naming conventions.
+* [] All new algorithms include at least one URL that points to Wikipedia or another similar explanation.
+* [] Documentation change?
 
 
 ## Features
