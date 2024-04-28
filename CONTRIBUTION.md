@@ -21,7 +21,7 @@ Contributions are welcome! Please open an issue or submit a pull request if you 
 
 ### Describe your change:
 
-Fixes #11316. There is a bug in the code that doesn't handle the edge case when the insertion of an empty string is done.
+Fixes #1. There is a bug in the code that doesn't handle the edge case when the insertion of an empty string is done.
 
 * Fix a bug or typo in an existing algorithm?
 
