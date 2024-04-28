@@ -128,3 +128,66 @@ You can manage your deployed app in the Streamlit Sharing dashboard. From here, 
 
 ---
 
+### Docker Deployment
+
+```Dockerfile
+# Use the official Python image as the base image
+FROM python:3.9
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy the requirements file
+COPY requirements.txt .
+
+# Install the required packages
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the rest of the application code
+COPY . .
+
+# Expose the port for the Streamlit app (default is 8501)
+EXPOSE 8501
+
+# Run the Streamlit app
+CMD ["streamlit", "run", "app.py"]
+```
+
+Here's what the different parts of the Dockerfile do:
+
+1. `FROM python:3.9`: This line specifies the base image for your Docker container. In this case, we're using the official Python 3.9 image.
+
+2. `WORKDIR /app`: This sets the working directory inside the container to `/app`.
+
+3. `COPY requirements.txt .`: This copies the `requirements.txt` file from your local machine to the container's working directory.
+
+4. `RUN pip install --no-cache-dir -r requirements.txt`: This line installs the Python packages listed in the `requirements.txt` file.
+
+5. `COPY . .`: This copies the entire contents of your local project directory (including the Streamlit app code) to the container's working directory.
+
+6. `EXPOSE 8501`: This exposes port 8501 in the container, which is the default port that Streamlit runs on.
+
+7. `CMD ["streamlit", "run", "app.py"]`: This is the command that will be executed when the container starts. It runs the `streamlit run app.py` command to start the Streamlit app.
+
+To build the Docker image, navigate to the directory containing the Dockerfile and run the following command:
+
+```
+docker build -t image-caption-generator .
+```
+
+This will build a Docker image with the tag `image-caption-generator`.
+
+To run the container and start the Streamlit app, use the following command:
+
+```
+docker run -p 8501:8501 image-caption-generator
+```
+
+This command maps the container's port 8501 to the host's port 8501, so you can access the Streamlit app in your web browser at `http://localhost:8501`.
+
+Make sure to replace `app.py` with the name of your Streamlit app file if it's different.
+
+With this Dockerfile, you can easily build and run your Streamlit image caption generator app in a Docker container, ensuring a consistent and isolated environment for your application.
+
+---
+
