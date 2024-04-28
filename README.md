@@ -84,8 +84,6 @@ The provided code includes an example usage:
 ```python
 predict_step(['sample2.jpg'])
 ```
----
-Here's an updated deployment section with more detailed instructions for deploying the Streamlit app:
 
 ---
 
