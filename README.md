@@ -153,7 +153,7 @@ CMD ["streamlit", "run", "app.py"]
 
 Here's what the different parts of the Dockerfile do:
 
-1. `FROM python:3.9`: This line specifies the base image for your Docker container. In this case, we're using the official Python 3.9 image.
+1. `FROM python:3.12`: This line specifies the base image for your Docker container. In this case, we're using the official Python 3.12 image.
 
 2. `WORKDIR /app`: This sets the working directory inside the container to `/app`.
 
