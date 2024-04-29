@@ -1,4 +1,3 @@
-
 ---
 
 # Image Caption Generator With Transformers
